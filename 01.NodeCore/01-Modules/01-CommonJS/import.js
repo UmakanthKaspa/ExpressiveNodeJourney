@@ -1,11 +1,11 @@
 //importing a single using Common JS Module Expor
-const greet = require('./commonjs-single-export.js.js')
+const greet = require('./single-exports.js')
+const {add,subtract,multiply,divide }= require('./multiple-exports');
 
 console.log(greet('umakanth'))
 
 
 
-const {add,subtract,multiply,divide }= require('./commonjs-multiple-exports.js');
 console.log(add(20, 1)); // 21
 console.log(subtract(20, 1));     // 19
 console.log(multiply(4, 5));     // 20
