@@ -9,7 +9,7 @@ This repository is all about my Node.js learning adventure, exploring the fantas
 
 This section is the heart of my Node.js learning:
 
-#### [01-Modules](./NodeCore/01-Modules) - Understanding Different Module Types 📚
+#### [01-Modules](01.NodeCore/01-Modules) - Understanding Different Module Types 📚
 
 - **01-CommonJS:** Exploring CommonJS modules, how they work with `require` and `module.exports`.
 - **02-ES6Modules:** Delving into the modern ES6 Modules using `import` and `export`.
