@@ -1,4 +1,3 @@
-Certainly! Here's an enriched overview of your repository with added emojis:
 
 # Welcome to ExpressiveNodeJourney! 🚀🌟
 
