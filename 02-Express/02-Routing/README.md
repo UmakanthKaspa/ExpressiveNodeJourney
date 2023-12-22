@@ -29,3 +29,37 @@ Callbacks are like dance moves in our code. Sometimes it's a solo, sometimes a t
 #### Combination of Both 🎉
 - A mix of solo and team callbacks.
 - Only one response allowed—no extra guests at the party!
+
+### Understanding HTTP Methods in Express 🌐
+
+HTTP methods are the tools we use to interact with our server, defining the kind of action we want to perform on a resource.
+
+#### GET Method 🚀
+- **GET** requests data from a specified resource.
+
+#### POST Method 📨
+- **POST** sends data to a server to create a new resource.
+
+#### PUT Method 🔁
+- **PUT** updates data on the server.
+
+#### DELETE Method 🚫
+- **DELETE** deletes a specified resource.
+
+#### PATCH Method 🌳
+- **PATCH** applies partial modifications to a resource.
+  
+
+
+#### Using `.route()` for a Common Path 🌟
+
+The `.route()` method simplifies handling multiple HTTP methods for a shared path. Here's how it's used:
+
+```javascript
+app.route('/http-methods')
+  .get((req, res) => {
+    res.send('Received a GET request! Time to fetch some unicorns 🦄');
+  })
+  .post((req, res) => {
+    res.send('Received a POST request! Your message has been teleported 📨✨');
+  });

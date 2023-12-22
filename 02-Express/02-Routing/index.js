@@ -134,6 +134,38 @@ const windPower = (req, res, next) => {
   );
   
 
+//http methods
+// Handling various HTTP methods for a specific route
+app.get('/http-methods', (req, res) => {
+  res.send('Received a GET request at the root! Time to fetch some unicorns 🦄');
+});
+
+app.post('/http-methods', (req, res) => {
+  res.send('Received a POST request at /post! Your message has been teleported 📨✨');
+});
+
+app.put('/http-methods', (req, res) => {
+  res.send('Received a PUT request at /put! Updating the magic spells ✨🔁');
+});
+
+app.delete('/http-methods', (req, res) => {
+  res.send('Received a DELETE request at /delete! Banishing the trolls 🚫👹');
+});
+
+app.patch('/http-methods', (req, res) => {
+  res.send('Received a PATCH request at /patch! Patching up the enchanted forest 🌳🩹');
+});
+
+
+// Using .route() for a common path
+app.route('/http-methods')
+.get((req, res) => {
+  res.send('Using .route() for a common path - GET method! 🌟');
+})
+.post((req, res) => {
+  res.send('Same path, different method - POST request with .route()! 🚀');
+});
+
 const PORT = 3001;
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
